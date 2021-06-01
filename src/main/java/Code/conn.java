@@ -16,7 +16,15 @@ public class conn {
     Statement s;
     
     public conn(){
-        //This is Testing branch
+        
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            c = DriverManager.getConnection("jdbc:mysql:///project1","root","");
+            
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        
     }
     
     
