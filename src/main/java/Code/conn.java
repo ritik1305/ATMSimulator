@@ -22,7 +22,7 @@ public class conn {
             c = DriverManager.getConnection("jdbc:mysql:///project1","root","");
             
         }catch(Exception e){
-            System.out.println(e);
+            System.out.println(e);asdasd
         }
         
     }
